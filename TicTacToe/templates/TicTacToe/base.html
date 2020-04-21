@@ -1,0 +1,45 @@
+{% load static %}
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	    <title>Hello</title>
+  
+	    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+	</head>
+	<body onload="updateScores()">
+		<div class="content">
+			<h1 id="main_title">TicTacToe</h1>
+
+			<div id="scores">
+				<div>Red: <span id="player1_score"></span></div>
+				<div>Draw: <span id="draw_score"></span></div>
+				<div>Blue: <span id="player2_score"></span></div>
+			</div>
+
+			<table id="game_board">
+				<tr>
+					<td id="box0" class="box"></td>
+					<td id="box1" class="box"></td>
+					<td id="box2" class="box"></td>
+				</tr>
+				<tr>
+					<td id="box3" class="box"></td>
+					<td id="box4" class="box"></td>
+					<td id="box5" class="box"></td>
+				</tr>
+				<tr>
+					<td id="box6" class="box"></td>
+					<td id="box7" class="box"></td>
+					<td id="box8" class="box"></td>
+				</tr>
+			</table>
+
+			<button id="reset_button" class="hidden">Play Again?</button>
+
+		</div>
+		<script src="{% static 'js/scripts.js' %}"></script>
+	</body>
+	</html>
